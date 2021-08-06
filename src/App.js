@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { CardList } from './components/card-list/card-list.jsx'
 import { Component } from 'react';
@@ -33,7 +32,7 @@ class App extends Component{
       luchadores.name.toLowerCase().includes(searchField.toLowerCase()))
     return(
       <div className="App">
-
+      <h1>Luchadores Rolodex</h1>
       <SearchBox 
       placeholder='search luchadores'
       handleChange={this.handleChange }/>

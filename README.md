@@ -1,6 +1,8 @@
 # Getting Started with Create 
 
-Estamos modificando el readme
+Estamos modificando el readme 
+
+con la subrama de subtito
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

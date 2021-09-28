@@ -1,6 +1,8 @@
 # Getting Started with Create 
 
-Estamos modificando el readme
+Estamos modificando el readme 
+
+con la subrama de subtito
 
 
 Modificacion de la rama desde Titin

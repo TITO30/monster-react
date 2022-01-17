@@ -11,15 +11,16 @@ class App extends Component{
     this.state= {
       luchadores:[],
       searchField: ''
+      
     };
     
     this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount(){
-    fetch('https://jsonplaceholder.typicode.com/users/')
+    fetch('https://rickandmortyapi.com/api/character')
     .then(response => response.json())
-    .then(users => this.setState({luchadores:users}));
+    .then(users => this.setState({luchadores:users.results}));
   }
 
     handleChange = (e)=>{
@@ -27,18 +28,19 @@ class App extends Component{
     }
 
   render(){
+    let morty="Rick"
     const{ luchadores,searchField} = this.state;
+
     const filteredLuchadores = luchadores.filter(luchadores => 
       luchadores.name.toLowerCase().includes(searchField.toLowerCase()))
+      console.log(luchadores)
+
     return(
       <div className="App">
       <h1>Luchadores Rolodex</h1>
       <SearchBox 
       placeholder='search luchadores'
       handleChange={this.handleChange }/>
-      
-
-
       <CardList luchadores={filteredLuchadores}></CardList>;
       </div>
     );

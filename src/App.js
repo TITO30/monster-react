@@ -30,6 +30,7 @@ class App extends Component{
   render(){
     let morty="Rick"
     const Prueba = 'bb'
+
     const{ luchadores,searchField} = this.state;
 
     const filteredLuchadores = luchadores.filter(luchadores => 
